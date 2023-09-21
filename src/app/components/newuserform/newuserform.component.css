@@ -1,0 +1,45 @@
+.add-new-user{
+    border: 2px solid #ccc; /* Add a border around the form */
+    padding: 20px;
+    margin: 20px;
+}
+.add-new-user h1{
+    display: flex;
+    justify-content: flex-start;
+    color: purple
+}
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 500px;   
+   margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<!-- Sign-In Form Section -->
+<div class="sign-in-form">
+  <!-- Logo -->
+  <img src="https://img.freepik.com/free-vector/flat-design-creative-nerd-logo-template_23-2149192868.jpg" alt="Logo" />
+
+  <!-- Sign-In Heading -->
+  <h1>Sign in</h1>
+
+  <!-- Form for Sign-In -->
+  <form [formGroup]="signInForm">
+    <!-- Email Input -->
+    <input matInput formControlName="email" placeholder="Email" (keyup)="onKeyUp($event)" />
+
+    <!-- Password Input (visible when showPasswordInput is true) -->
+    <input matInput formControlName="password" type="password" placeholder="Password" *ngIf="showPasswordInput" />
+  </form>
+
+  <!-- Forgot Password Link -->
+  <a href="#">Forgot Password? Click Here</a>
+
+  <!-- Button Group for Back and Sign In Buttons -->
+  <div class="button-group">
+    <!-- Back Button -->
+    <button mat-raised-button color="primary" class="small-button" (click)="goBack()">Back</button>
+
+    <!-- Sign In Button -->
+    <button mat-raised-button color="primary" class="small-button" (click)="onSubmit()">Sign in</button>
+  </div>
+</div>

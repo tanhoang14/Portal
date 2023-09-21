@@ -1,0 +1,41 @@
+<!-- Header Section -->
+<div class="header">
+  <h1>Company Settings</h1>
+  <!-- Button to navigate to the New User form -->
+  <div>
+    <button (click)="navigateToNewUserForm()">New User</button>
+  </div>
+</div>
+
+<!-- Search Container -->
+<div class="search-container">
+  <!-- Form for searching users by first name and last name -->
+  <form [formGroup]="userForm">
+    <input type="text" placeholder="Search first name" formControlName="firstName">
+    <input type="text" placeholder="Search last name" formControlName="lastName">
+    <!-- Button to initiate the search -->
+    <button (click)="searchUsers()">Search</button>
+  </form>
+</div>
+
+<!-- User Table -->
+<table>
+  <thead>
+    <!-- Table headings -->
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Display user data using ngFor -->
+    <tr *ngFor="let user of users">
+      <td>{{ user.userID }}</td>
+      <td>{{ user.firstName }}</td>
+      <td>{{ user.lastName }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,39 @@
+  /* Apply styles to the form */
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  /* Style the submit button */
+  .form-group button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #2980b9;
+  }
+  
+  body {
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }

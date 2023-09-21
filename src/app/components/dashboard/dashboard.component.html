@@ -1,0 +1,65 @@
+<!-- Sidebar Section -->
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="avatar">
+      <!-- Avatar icon or image goes here -->
+      <img src="https://img.freepik.com/free-vector/flat-design-creative-nerd-logo-template_23-2149192868.jpg" alt="Avatar">
+    </div>
+    <button class="new-request-button" (click)="navigateToNewRequest()"><mat-icon>add</mat-icon>New Request</button>
+  </div>
+  <nav class="category-container">
+    <!-- Category: Request -->
+    <div class="category" (click)="navigateToCategory('request')">
+      <mat-icon>folder_open</mat-icon>
+      <div>REQUEST</div>
+    </div>
+
+    <!-- Category: Check Eligibility -->
+    <div class="category" (click)="navigateToCategory('check-eligibility')">
+      <mat-icon>search</mat-icon>
+      <div>CHECK ELIGIBILITY</div>
+    </div>
+    
+    <!-- Category: Agencies -->
+    <div class="category" (click)="navigateToCategory('agencies')">
+      <mat-icon>support_agent</mat-icon>
+      <div>AGENCIES</div>
+    </div>
+    
+    <!-- Category: Case Managers -->
+    <div class="category" (click)="navigateToCategory('case-managers')">
+      <mat-icon>groups_3</mat-icon>
+      <div>CASE MANAGERS</div>
+    </div>
+    
+    <!-- Category: User Profile -->
+    <div class="category" (click)="navigateToCategory('user-profile')">
+      <mat-icon>person</mat-icon>
+      <div>USER PROFILE</div>
+    </div>
+    
+    <!-- Category: Company Settings -->
+    <div class="category" (click)="navigateToCategory('company-settings')" >
+      <mat-icon>settings</mat-icon>
+      <div>COMPANY SETTINGS</div>
+    </div>
+    
+    <!-- Category: Portal FAQs -->
+    <div class="category" (click)="navigateToCategory('portal-faqs')">
+      <mat-icon>help</mat-icon>
+      <div>PORTAL FAQs</div>
+    </div>
+
+    <!-- Category: Logout -->
+    <div class="category" (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      <div>LOG OUT</div>
+    </div>
+  </nav>
+</div>
+
+<!-- Main Content Section -->
+<div class="main-content">
+  <!-- Router Outlet to display content based on the route -->
+  <router-outlet></router-outlet>
+</div>
